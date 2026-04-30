@@ -16,7 +16,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <div
-      id="about"
+      id="home"
       className="flex items-center justify-center pt-24 pb-14 min-h-[80vh] px-8 transition-colors duration-300"
     >
       <div className="container mx-auto lg:w-10/12 xl:w-9/12 flex flex-col-reverse md:flex-row items-center space-y-10 md:space-y-0 md:space-x-10">
