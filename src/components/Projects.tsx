@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 px-4 md:px-8 transition-colors duration-300"
+      className="py-12 sm:py-20 px-4 md:px-8 transition-colors duration-300"
     >
       <div className="container mx-auto lg:w-10/12 xl:w-9/12">
         {/* Section Title */}

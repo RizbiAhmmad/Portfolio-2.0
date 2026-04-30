@@ -45,7 +45,7 @@ const Nav = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed top-0 left-0 w-full z-50 transition-[padding,background-color] duration-300 ${scrolled ? "pt-2" : "pt-4 sm:pt-6"}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-[padding,background-color] duration-300 ${scrolled ? "pt-0" : "pt-4 sm:pt-6"}`}
     >
       <div className="container mx-auto px-4 xl:w-10/12 relative">
         <div className="flex justify-between items-center px-6 py-3 rounded-full bg-white/30 dark:bg-[#0f111a]/60 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] relative overflow-hidden transition-colors duration-300 isolate">

@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-24 px-4 md:px-8 transition-colors duration-300"
+      className="py-12 sm:py-20 px-4 md:px-8 transition-colors duration-300"
     >
       <div className="container mx-auto lg:w-11/12 xl:w-10/12">
         {/* Title */}
@@ -37,7 +37,7 @@ const About = () => {
             className="w-full lg:w-5/12 flex justify-center relative"
           >
             {/* Image Wrapper */}
-            <div className="relative w-72 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[28rem] rounded-[2.5rem] p-1 bg-gradient-to-br from-[#7A34F2]/50 to-[#87CEEB]/50 shadow-[0_0_40px_rgba(122,52,242,0.15)]">
+            <div className="relative w-72 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[28rem] rounded-[2.5rem] p-1 bg-gradient-to-br from-[#7A34F2]/50 to-[#87CEEB]/50 shadow-[0_0_40px_rgba(122,52,242,0.15)] overflow-hidden">
               <div className="w-full h-full rounded-[2.3rem] overflow-hidden relative bg-gray-200 dark:bg-gray-800">
                 <Image
                   src="/Rizbi_Ahmmad 2.jpeg"

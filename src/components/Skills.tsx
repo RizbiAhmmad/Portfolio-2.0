@@ -135,7 +135,7 @@ const Skills = () => {
   return (
     <section
       id="skill"
-      className="py-24 px-4 md:px-8 transition-colors duration-300"
+      className="py-12 sm:py-20 px-4 md:px-8 transition-colors duration-300"
     >
       <div className="container mx-auto lg:w-10/12 xl:w-9/12">
         {/* Section Title */}
@@ -206,7 +206,7 @@ const Skills = () => {
                   transition={{ delay: index * 0.05 }}
                   className="flex flex-col items-center justify-center gap-4"
                 >
-                  <div className="relative p-5 bg-white dark:bg-gray-900 rounded-2xl shadow-md border border-gray-100 dark:border-gray-800 group">
+                  <div className="relative p-5 bg-white dark:bg-gray-900 rounded-2xl shadow-md border border-gray-100 dark:border-gray-800 group overflow-hidden">
                     <Image
                       width={500}
                       height={500}

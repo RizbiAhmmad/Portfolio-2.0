@@ -54,7 +54,7 @@ const Education = () => {
     <section
       id="education"
       ref={containerRef}
-      className="py-24 px-4 md:px-8 transition-colors duration-300 relative overflow-hidden"
+      className="py-12 sm:py-20 px-4 md:px-8 transition-colors duration-300 relative overflow-hidden"
     >
       <div className="container mx-auto lg:w-10/12 xl:w-9/12">
         {/* Section Title */}

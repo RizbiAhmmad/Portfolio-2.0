@@ -17,7 +17,7 @@ const Banner = () => {
   return (
     <div
       id="home"
-      className="flex items-center justify-center pt-24 pb-14 min-h-[80vh] px-8 transition-colors duration-300"
+      className="flex items-center justify-center pt-10 sm:pt-24 pb-14 min-h-[80vh] px-8 transition-colors duration-300"
     >
       <div className="container mx-auto lg:w-10/12 xl:w-9/12 flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-10">
         {/* Text Section */}
@@ -69,7 +69,7 @@ const Banner = () => {
             {/* Social Icons */}
             <div className="flex items-center justify-center md:justify-start gap-6 mt-8">
               <a
-                href="https://github.com"
+                href="https://github.com/RizbiAhmmad"
                 target="_blank"
                 rel="noreferrer"
                 className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] hover:-translate-y-1 transition-all duration-300"
@@ -77,7 +77,7 @@ const Banner = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/rizbi2001/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] hover:-translate-y-1 transition-all duration-300"
@@ -85,7 +85,7 @@ const Banner = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/mdakashkhan444/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] hover:-translate-y-1 transition-all duration-300"
@@ -93,7 +93,7 @@ const Banner = () => {
                 <FaFacebook />
               </a>
               <a
-                href="https://wa.me/"
+                href="https://wa.me/+8801815109616"
                 target="_blank"
                 rel="noreferrer"
                 className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] hover:-translate-y-1 transition-all duration-300"
@@ -105,7 +105,7 @@ const Banner = () => {
             {/* Hire Me Button */}
             <div className="flex justify-center md:justify-start">
               <a
-                href="mailto:rizonahmed0486@gmail.com"
+                href="mailto:contact.rizbi123@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >

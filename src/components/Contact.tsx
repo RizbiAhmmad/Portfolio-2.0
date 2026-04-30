@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-24 px-4 md:px-8 transition-colors duration-300 relative overflow-hidden"
+      className="py-12 sm:py-20 px-4 md:px-8 transition-colors duration-300 relative overflow-hidden"
     >
       {/* Optional: Subtle background glow to mimic the dark purple vibe */}
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-[#7A34F2]/20 rounded-full blur-[120px] -translate-y-1/2 -z-10 hidden dark:block"></div>

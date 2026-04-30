@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="flex gap-6">
           <Link
-            href="https://github.com"
+            href="https://github.com/RizbiAhmmad"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-white dark:hover:text-black transition-all"
@@ -19,7 +19,7 @@ const Footer = () => {
             <FaGithub size={20} />
           </Link>
           <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/rizbi2001/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-[#0077b5] hover:text-white dark:hover:bg-[#0a66c2] dark:hover:text-white transition-all"
@@ -27,7 +27,7 @@ const Footer = () => {
             <FaLinkedin size={20} />
           </Link>
           <Link
-            href="https://facebook.com"
+            href="https://www.facebook.com/mdakashkhan444/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-[#1877F2] hover:text-white dark:hover:bg-[#1877F2] dark:hover:text-white transition-all"
@@ -35,7 +35,7 @@ const Footer = () => {
             <FaFacebook size={20} />
           </Link>
           <Link
-            href="https://wa.me/"
+            href="https://wa.me/+8801815109616"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-[#25D366] hover:text-white dark:hover:bg-[#25D366] dark:hover:text-white transition-all"

@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,8 +46,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Nav />
-          <main className="flex-1 mt-24">{children}</main>
+          <SmoothScroll>
+            <main className="flex-1 mt-20 sm:mt-24">{children}</main>
+          </SmoothScroll>
           <Footer />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>

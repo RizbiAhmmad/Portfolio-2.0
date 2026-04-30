@@ -13,39 +13,68 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    id: "vein-blood-donation",
-    title: "Vein – Full Stack Blood Donation Platform",
-    shortDescription: "A real-time healthcare platform connecting blood donors with recipients through intelligent matching, secure request management and verified donor networks.",
-    fullDescription: "Vein is a comprehensive MERN-stack platform built to bridge the gap between urgent blood requirements and willing donors. The system includes real-time notifications, a secure user dashboard, admin controls for verified organizations, and a geographically-aware donor matching system.",
-    image: "https://images.unsplash.com/photo-1583324113626-70df0f4deaab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    techStack: ["TanStack Query", "Express", "JavaScript", "Firebase", "Tailwind"],
-    liveLink: "https://github.com/RizbiAhmmad",
-    githubLink: "https://github.com/RizbiAhmmad",
-    challenges: "The most significant challenge was optimizing the real-time geographic search to find the nearest compatible blood donors without overloading the database. Additionally, securing user health data and ensuring real-time Firebase syncing across multiple active clients required complex state management.",
-    improvements: "In the future, I plan to integrate Google Maps API for live tracking of blood deliveries, implement AI-based predictions for blood bank shortages, and introduce a mobile application version."
+    id: "playtube-client",
+    title: "PlayTube – Full Stack Video Streaming Platform",
+    shortDescription:
+      "A comprehensive Next.js-based video platform featuring user authentication, media management, dashboards, and admin controls for seamless content streaming and interaction.",
+    fullDescription:
+      "PlayTube is a modern MERN-stack inspired client application built with Next.js, designed to provide a YouTube-like experience for users. It includes robust authentication, media upload and viewing capabilities, user dashboards, admin analytics, payment integration, and features like comments, likes, watchlists, and reviews. The platform supports role-based access for users and admins, with secure API integrations and responsive UI components.",
+    image: "/playtube.png",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Query",
+      "Axios",
+      "shadcn/ui",
+      "Zod",
+    ],
+    liveLink: "https://playtube-client.vercel.app/",
+    githubLink: "https://github.com/RizbiAhmmad/PlayTube-Client",
+    challenges:
+      "The primary challenge was implementing complex state management for real-time features like comments and likes across multiple components, while ensuring secure authentication and role-based access. Optimizing media loading and handling large video files without performance degradation also required careful API design and caching strategies.",
+    improvements:
+      "Future enhancements include integrating a video player with advanced controls, implementing real-time chat for media, adding AI-powered content recommendations, and developing a mobile app version for broader accessibility.",
   },
   {
-    id: "e-commerce-dashboard",
-    title: "Aura – Premium E-Commerce Dashboard",
-    shortDescription: "A complete admin dashboard for e-commerce platforms featuring sales analytics, inventory management, and seamless order tracking.",
-    fullDescription: "Aura provides business owners with a powerful, fast, and beautiful interface to manage their online stores. It features rich interactive charts for revenue tracking, an intuitive inventory management table with bulk-edit capabilities, and a fully functional order processing pipeline.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    techStack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "ShadcnUI"],
-    liveLink: "https://github.com/RizbiAhmmad",
-    githubLink: "https://github.com/RizbiAhmmad",
-    challenges: "Handling complex relational data between Products, Orders, Users, and Categories using Prisma while maintaining strict TypeScript typing was challenging. I also had to optimize the server-side rendering to ensure the analytics charts loaded instantly.",
-    improvements: "I aim to add multi-vendor support, allowing different sellers to register and manage their own inventory on the platform. Integrating Stripe for automated payout processing is also on the roadmap."
+    id: "e-commerce",
+    title: "Leafo - E-Commerce Platform",
+    shortDescription:
+      "A responsive React/Vite storefront with Firebase auth, product browsing, cart checkout, admin dashboards, and seamless order management for a modern online shop.",
+    fullDescription:
+      "This e-commerce client is built with React and Vite, featuring a complete product catalog, category and subcategory browsing, shopping cart, checkout flow, user authentication, and admin dashboards. It integrates Firebase for authentication and secure user sessions, React Query for efficient data fetching, and Tailwind CSS for a polished responsive UI. The app supports customer order tracking, payment success/cancel handling, inventory and coupon management for admins, and enhanced UX with animated components, barcode generation, and live filtering.",
+    image: "/e-commerce.png",
+    techStack: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Firebase",
+      "React Router",
+      "React Query",
+      "Axios",
+      "Framer Motion",
+    ],
+    liveLink: "https://organic.bangladeshiit.com",
+    githubLink: "https://github.com/RizbiAhmmad/E-Commerce-Website",
+    challenges:
+      "The primary challenge was coordinating state across the cart, checkout flow, dashboard panels, and authenticated routes while maintaining a fast and responsive UI. Managing Firebase authentication with role-based admin/user access and optimizing data fetches for products and orders with React Query also required careful handling.",
+    improvements:
+      "Future enhancements include adding real payment gateway integration, smarter product recommendations, real-time admin notifications, expanded mobile responsiveness, and a dedicated mobile app version for wider accessibility.",
   },
   {
-    id: "task-flow",
-    title: "TaskFlow – Agile Project Management",
-    shortDescription: "A collaborative Kanban-style project management tool designed for agile software development teams.",
-    fullDescription: "TaskFlow is a highly interactive application that allows teams to create, assign, and track tasks seamlessly. It supports drag-and-drop Kanban boards, team workspaces, deadline notifications, and progress analytics.",
-    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    techStack: ["React", "Node.js", "MongoDB", "Redux Toolkit", "Tailwind CSS"],
-    liveLink: "https://github.com/RizbiAhmmad",
-    githubLink: "https://github.com/RizbiAhmmad",
-    challenges: "Implementing a smooth, bug-free drag-and-drop interface that instantly synced with the backend database without causing UI lag was a major hurdle. Managing complex global state with Redux Toolkit for multiple concurrent users also required careful architecture.",
-    improvements: "Future updates will include real-time WebSocket chat within task cards, automated email reminders for approaching deadlines, and native GitHub integration to link commits directly to tasks."
-  }
+    id: "e-learning",
+    title: "E-Learning Platform",
+    shortDescription:
+      "E-Learning is an interactive platform designed to help students and teachers connect through online courses, providing seamless authentication, course management, and secure payments.",
+    fullDescription:
+      "E-Learning is an advanced web platform built to facilitate online education with comprehensive features for both students and instructors. The system supports secure role-based access (Student, Teacher, and Admin), real-time course content delivery, and an integrated payment gateway for course enrollment.",
+    image: "/E-learning.jpeg",
+    techStack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    liveLink: "https://e-learning-f11fe.web.app",
+    githubLink: "https://github.com/RizbiAhmmad/E-Learning-Website-Client",
+    challenges:
+      "Implementing role-based authentication securely\nIntegrating Stripe for seamless payments\nManaging real-time data fetching with React Query\nOptimizing performance and reducing API response times",
+    improvements:
+      "Adding more interactive classroom features (live video, quizzes, etc.) \n Adding Native Mobile App (React Native) \n Expanding language support for a global audience",
+  },
 ];
