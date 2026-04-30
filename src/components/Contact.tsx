@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FiPhone, FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import { BorderBeam } from "@stianlarsen/border-beam";
 
 const Contact = () => {
   return (
@@ -74,7 +75,13 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="w-full lg:w-1/2"
           >
-            <div className="p-8 md:p-10 rounded-3xl bg-white dark:bg-gradient-to-br dark:from-[#1b0d36] dark:to-[#0f111a] shadow-2xl border border-gray-100 dark:border-[#2d1b54]">
+            <div className="relative p-8 md:p-10 rounded-3xl bg-white dark:bg-gradient-to-br dark:from-[#1b0d36] dark:to-[#0f111a] shadow-2xl border border-gray-100 dark:border-[#2d1b54] overflow-hidden">
+              <BorderBeam
+                size={400}
+                duration={15}
+                colorFrom={"#7A34F2"}
+                colorTo={"#87CEEB"}
+              />
               <form
                 className="flex flex-col gap-6"
                 onSubmit={(e) => e.preventDefault()}

@@ -35,7 +35,8 @@ const Nav = () => {
   const navLinks = [
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skill" },
-    { name: "Works", href: "#work" },
+    { name: "Education", href: "#education" },
+    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -44,17 +45,18 @@ const Nav = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "pt-2" : "pt-4 sm:pt-6"}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-[padding,background-color] duration-300 ${scrolled ? "pt-2" : "pt-4 sm:pt-6"}`}
     >
-      <div className="container mx-auto px-4 xl:w-9/12 relative">
-        <div className="flex justify-between items-center px-6 py-3 rounded-full bg-white/30 dark:bg-[#0f111a]/60 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] relative overflow-hidden transition-colors duration-300">
-          {/* Main Navbar BorderBeam - Surrounds the glass nav */}
-          <BorderBeam
-            size={400}
-            duration={15}
-            colorFrom={"#7A34F2"}
-            colorTo={"#87CEEB"}
-          />
+      <div className="container mx-auto px-4 xl:w-10/12 relative">
+        <div className="flex justify-between items-center px-6 py-3 rounded-full bg-white/30 dark:bg-[#0f111a]/60 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] relative overflow-hidden transition-colors duration-300 isolate">
+          <div className="absolute inset-0 rounded-full overflow-hidden pointer-events-none z-0">
+            <BorderBeam
+              size={mounted && window.innerWidth < 768 ? 150 : 300}
+              duration={15}
+              colorFrom={"#7A34F2"}
+              colorTo={"#87CEEB"}
+            />
+          </div>
 
           {/* Logo / Left Side */}
           <div className="flex items-center z-10">
@@ -133,15 +135,16 @@ const Nav = () => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -20, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-full left-4 right-4 mt-4 p-4 rounded-3xl bg-white/90 dark:bg-[#0f111a]/95 backdrop-blur-2xl border border-white/40 dark:border-white/10 shadow-2xl md:hidden flex flex-col gap-2 z-40 overflow-hidden"
+              className="absolute top-full left-4 right-4 mt-4 p-4 rounded-3xl bg-white/90 dark:bg-[#0f111a]/95 backdrop-blur-2xl border border-white/40 dark:border-white/10 shadow-2xl md:hidden flex flex-col gap-2 z-40 overflow-hidden relative isolate"
             >
-              {/* Optional: Add a subtle border beam to the mobile menu too */}
-              <BorderBeam
-                size={300}
-                duration={12}
-                colorFrom={"#7A34F2"}
-                colorTo={"#87CEEB"}
-              />
+              <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none z-0">
+                <BorderBeam
+                  size={200}
+                  duration={12}
+                  colorFrom={"#7A34F2"}
+                  colorTo={"#87CEEB"}
+                />
+              </div>
 
               <div className="relative z-10 flex flex-col w-full text-center items-center py-4">
                 <ul className="flex flex-col gap-4 items-center w-full">
