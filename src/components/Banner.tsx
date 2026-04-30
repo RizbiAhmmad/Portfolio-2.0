@@ -129,7 +129,7 @@ const Banner = () => {
             <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full flex items-center justify-center overflow-hidden bg-gray-200 dark:bg-gray-800 shadow-2xl z-10 relative">
               {/* Replace the src below with your actual image path like '/profile.jpg' */}
               <Image
-                src="/Rizbi_Ahmmad.jpeg"
+                src="/Rizbi_Ahmmad.png"
                 alt="Rizbi Ahmmad"
                 width={500}
                 height={500}
