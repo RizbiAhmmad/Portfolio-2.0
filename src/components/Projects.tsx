@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink, FiEye } from "react-icons/fi";
 import { projectsData } from "@/data/projects";
 import { BorderBeam } from "@stianlarsen/border-beam";
+import GSAPReveal from "./GSAPReveal";
 
 const Projects = () => {
   return (
@@ -17,21 +18,17 @@ const Projects = () => {
     >
       <div className="container mx-auto lg:w-10/12 xl:w-9/12">
         {/* Section Title */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-black inline-block relative text-gray-900 dark:text-white">
-            Featured{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7A34F2] to-[#87CEEB]">
-              Projects
-            </span>
-            <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-[#7A34F2] to-[#87CEEB] rounded-full"></span>
-          </h2>
-        </motion.div>
+        <GSAPReveal direction="up" duration={1} distance={30}>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black inline-block relative text-gray-900 dark:text-white">
+              Featured{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7A34F2] to-[#87CEEB]">
+                Projects
+              </span>
+              <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-[#7A34F2] to-[#87CEEB] rounded-full"></span>
+            </h2>
+          </div>
+        </GSAPReveal>
 
         {/* Projects List */}
         <div className="space-y-24">
@@ -114,7 +111,9 @@ const Projects = () => {
                   <Link href={`/projects/${project.id}`}>
                     <button className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#7A34F2] to-[#4F46E5] text-white font-bold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-105 active:scale-95 transition-all">
                       <FiEye size={18} />
-                      <span className="font-semibold text-sm">View Details</span>
+                      <span className="font-semibold text-sm">
+                        View Details
+                      </span>
                     </button>
                   </Link>
                 </div>

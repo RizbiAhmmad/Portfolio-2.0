@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { BorderBeam } from "@stianlarsen/border-beam";
-import { Download, Laptop, GraduationCap } from "lucide-react";
+import { Laptop, GraduationCap } from "lucide-react";
 
 const About = () => {
   return (
@@ -48,13 +48,13 @@ const About = () => {
               </div>
 
               {/* Floating CV Button */}
-              <a
+              {/* <a
                 href="/resume.pdf"
                 target="_blank"
-                className="absolute -top-4 -right-4 sm:-right-8 bg-[#8B5CF6] hover:bg-[#7A34F2] text-white px-5 py-3 rounded-2xl flex items-center gap-2 font-medium shadow-xl transition-transform hover:scale-105 z-20"
+                className="absolute top-0 right-0 sm:-right-8 bg-[#8B5CF6] hover:bg-[#7A34F2] text-white px-5 py-3 rounded-2xl flex items-center gap-2 font-medium shadow-xl transition-transform hover:scale-105 z-20"
               >
                 My CV <Download size={18} />
-              </a>
+              </a> */}
 
               {/* Optional: Add BorderBeam for extra glow */}
               <BorderBeam

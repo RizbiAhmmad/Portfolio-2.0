@@ -12,6 +12,7 @@ import { TypeAnimation } from "react-type-animation";
 import { BorderBeam } from "@stianlarsen/border-beam";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Magnetic from "./Magnetic";
 
 const Banner = () => {
   return (
@@ -68,52 +69,63 @@ const Banner = () => {
 
             {/* Social Icons */}
             <div className="flex items-center justify-center md:justify-start gap-6 mt-8">
-              <a
-                href="https://github.com/RizbiAhmmad"
-                target="_blank"
-                rel="noreferrer"
-                className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] hover:-translate-y-1 transition-all duration-300"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/rizbi2001/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] hover:-translate-y-1 transition-all duration-300"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://www.facebook.com/mdakashkhan444/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] hover:-translate-y-1 transition-all duration-300"
-              >
-                <FaFacebook />
-              </a>
-              <a
-                href="https://wa.me/+8801815109616"
-                target="_blank"
-                rel="noreferrer"
-                className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] hover:-translate-y-1 transition-all duration-300"
-              >
-                <FaWhatsapp />
-              </a>
+              <Magnetic strength={0.3}>
+                <a
+                  href="https://github.com/RizbiAhmmad"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] transition-all duration-300 block"
+                >
+                  <FaGithub />
+                </a>
+              </Magnetic>
+              <Magnetic strength={0.3}>
+                <a
+                  href="https://www.linkedin.com/in/rizbi2001/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] transition-all duration-300 block"
+                >
+                  <FaLinkedin />
+                </a>
+              </Magnetic>
+              <Magnetic strength={0.3}>
+                <a
+                  href="https://www.facebook.com/mdakashkhan444/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] transition-all duration-300 block"
+                >
+                  <FaFacebook />
+                </a>
+              </Magnetic>
+              <Magnetic strength={0.3}>
+                <a
+                  href="https://wa.me/+8801815109616"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-2xl text-gray-600 dark:text-gray-400 hover:text-[#7A34F2] dark:hover:text-[#87CEEB] transition-all duration-300 block"
+                >
+                  <FaWhatsapp />
+                </a>
+              </Magnetic>
             </div>
 
             {/* Hire Me Button */}
             <div className="flex justify-center md:justify-start">
-              <a
-                href="mailto:contact.rizbi123@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="mt-8 px-10 py-3 flex items-center gap-2 cursor-pointer bg-gray-900 dark:bg-white text-white dark:text-gray-900 border-b-2 border-purple-600 hover:bg-[#7A34F2] dark:hover:bg-[#7A34F2] dark:hover:text-white hover:text-white rounded-full transition-all duration-300 shadow-lg group">
-                  <span className="font-semibold text-lg">Hire Me</span>
-                  <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-                </button>
-              </a>
+              <Magnetic strength={0.2}>
+                <a
+                  href="mailto:contact.rizbi123@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block"
+                >
+                  <button className="mt-8 px-10 py-3 flex items-center gap-2 cursor-pointer bg-gray-900 dark:bg-white text-white dark:text-gray-900 border-b-2 border-purple-600 hover:bg-[#7A34F2] dark:hover:bg-[#7A34F2] dark:hover:text-white hover:text-white rounded-full transition-all duration-300 shadow-lg group">
+                    <span className="font-semibold text-lg">Hire Me</span>
+                    <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </a>
+              </Magnetic>
             </div>
           </motion.div>
         </div>
